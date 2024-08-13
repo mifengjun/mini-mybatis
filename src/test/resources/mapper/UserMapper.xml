@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="org.mi6n.minimybatis.binding.UserDao">
+
+    <select id="findUserByUsername" parameterType="java.lang.String" resultType="string">
+        SELECT id, userId, userHead, createTime
+        FROM user
+        where id = #{id}
+    </select>
+
+</mapper>

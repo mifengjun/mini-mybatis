@@ -11,7 +11,10 @@ import java.util.Map;
  */
 public class Configuration {
 
+
     protected MapperRegistry mapperRegistry = new MapperRegistry(this);
+
+    // key 为方法名，对应 mapper xml 中的 id 属性
     protected Map<String, MappedStatement> mappedStatements = new HashMap<>();
 
     public void addMappers(String packageName) {

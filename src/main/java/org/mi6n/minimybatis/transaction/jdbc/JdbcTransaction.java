@@ -10,8 +10,8 @@ import java.sql.SQLException;
  * @author mifengjun@gmail.com
  */
 public class JdbcTransaction implements Transaction {
-    protected  Connection connection;
-    protected  DataSource dataSource;
+    protected Connection connection;
+    protected DataSource dataSource;
     // 隔离级别；
     /**
      * @see Connection
@@ -62,7 +62,7 @@ public class JdbcTransaction implements Transaction {
 //     */
 //    int TRANSACTION_SERIALIZABLE     = 8;
 
-    protected  boolean autoCommit;
+    protected boolean autoCommit;
 
     public JdbcTransaction(Connection connection) {
         this.connection = connection;
@@ -81,17 +81,24 @@ public class JdbcTransaction implements Transaction {
     }
 
     @Override
-    public void commit() {
+    public void commit() throws SQLException {
+        if (connection != null && !connection.getAutoCommit()) {
+            connection.commit();
+        }
+    }
+
+    @Override
+    public void rollback() throws SQLException {
+        if (connection != null) {
+            connection.rollback();
+        }
 
     }
 
     @Override
-    public void rollback() {
-
-    }
-
-    @Override
-    public void close() {
-
+    public void close() throws SQLException {
+        if (connection != null && !connection.isClosed()) {
+            connection.close();
+        }
     }
 }

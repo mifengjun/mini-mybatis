@@ -1,4 +1,15 @@
 <Configuration>
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"/>
+            <dataSource type="DRUID">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://10.58.11.252:4366/crm"/>
+                <property name="username" value="ldbmp"/>
+                <property name="password" value="XfCgwsOhSPpO9CD5"/>
+            </dataSource>
+        </environment>
+    </environments>
     <mappers>
         <mapper resource="mapper/UserMapper.xml"/>
     </mappers>

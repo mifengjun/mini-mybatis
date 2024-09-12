@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.12">
   <diagram name="Page-1" id="c0EpnyGb1v58AntvmAJK">
-    <mxGraphModel dx="2419" dy="2265" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
+    <mxGraphModel dx="2293" dy="2015" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -471,6 +471,45 @@
               <mxPoint x="3810" y="-130" />
               <mxPoint x="3810" y="720" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-61" value="&lt;pre style=&quot;font-weight: 400; text-align: center; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;mybatis.datasource&lt;/pre&gt;" style="swimlane;whiteSpace=wrap;html=1;align=left;spacingLeft=20;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="5070" y="345" width="675" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-62" value="&lt;pre style=&quot;font-weight: 400; text-align: center; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;mybatis.druid&lt;/pre&gt;" style="swimlane;whiteSpace=wrap;html=1;align=left;spacingLeft=20;fontColor=default;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-61">
+          <mxGeometry x="75" y="281" width="510" height="246.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-63" value="DruidDataSourceFacotry" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=default;rounded=0;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-62">
+          <mxGeometry x="40" y="59.5" width="410" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-64" value="-&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 30, 30); color: rgb(201, 209, 217);&quot;&gt;props&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 30, 30); color: rgb(201, 209, 217);&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 30, 30); color: rgb(201, 209, 217);&quot;&gt;Properties&lt;/span&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;rounded=0;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-63">
+          <mxGeometry y="26" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-65" value="" style="line;strokeWidth=1;fillColor=default;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;rounded=0;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-63">
+          <mxGeometry y="52" width="410" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-67" value="" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;rounded=0;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-63">
+          <mxGeometry y="60" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-70" value="DataSourceFacotry" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=default;rounded=0;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-61">
+          <mxGeometry x="115" y="74" width="410" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-71" value="" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;rounded=0;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-70">
+          <mxGeometry y="26" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-72" value="" style="line;strokeWidth=1;fillColor=default;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;rounded=0;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-70">
+          <mxGeometry y="52" width="410" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-73" value="+ &lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#d2a8ff&quot;&gt;&lt;span style=&quot;font-size: 13.0667px; background-color: rgb(30, 30, 30);&quot;&gt;setProperties(Properties props):void&lt;/span&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;rounded=0;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-70">
+          <mxGeometry y="60" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-74" value="+&amp;nbsp;&lt;span style=&quot;color: rgb(210, 168, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 30, 30);&quot;&gt;getDataSource&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 30, 30); color: rgb(201, 209, 217);&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 30, 30); color: rgb(201, 209, 217);&quot;&gt;):&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 30, 30); color: rgb(201, 209, 217);&quot;&gt;DataSource&lt;/span&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;labelBackgroundColor=none;rounded=0;" vertex="1" parent="eM44WlCzlPbLpEaJTEyo-70">
+          <mxGeometry y="86" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="eM44WlCzlPbLpEaJTEyo-75" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="eM44WlCzlPbLpEaJTEyo-61" source="eM44WlCzlPbLpEaJTEyo-63" target="eM44WlCzlPbLpEaJTEyo-70">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="765" y="345" as="sourcePoint" />
+            <mxPoint x="925" y="345" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
